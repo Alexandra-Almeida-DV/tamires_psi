@@ -73,7 +73,7 @@ const SobreMim: React.FC = () => {
           variant="h3"
           color="#3D5361"
           fontFamily='"Dancing Script", cursive'
-          sx={{ mb: '2rem' }}
+          sx={{ mb: '2rem', ml: { xs: 0, md: 30 } }}
         >
           Sobre Mim
         </Typography>
@@ -85,23 +85,20 @@ const SobreMim: React.FC = () => {
           variant="h6"
           sx={{
             maxWidth: '600px',
-            fontSize: { xs: '0.875rem', sm: '1rem', md: '1.125rem', lg: '1.25rem' },
+            fontSize: { xs: '0.875rem', sm: '1rem', md: '1.125rem', lg: '1.2rem' },
             fontFamily: '"Quicksand", sans-serif',
             color: '#3D5361',
-            mb: '4rem', // Adiciona margem inferior maior para espaçamento do botão
+            mb: '2rem', // Adiciona margem inferior maior para espaçamento do botão
+            ml: { xs: 0, md: 30 }
           }}
         >
-          Olá, meu nome é Tamires, sou psicóloga clínica, formada pela Universidade de Araraquara (UNIARA).
-          Atuo pela abordagem psicanalítica e em psico-oncologia.
-          Realizo atendimentos online a brasileiros, maiores de 18 anos e idosos, que residem no Brasil ou no exterior.
-          Durante os atendimentos, prezo pelo acolhimento, escuta ativa e sigilo, com foco no atendimento de qualidade aos
-          meus pacientes. Para isso, estou sempre em busca de atualização nos temas em psicologia.
+          Olá, meu nome é Tamires, sou psicóloga clínica, formada pela Universidade de Araraquara (UNIARA). Atuo pela abordagem psicanalítica e em psico-oncologia. Realizo atendimentos online a brasileiros, maiores de 18 anos e idosos, que residem no Brasil ou no exterior. Durante os atendimentos, prezo pelo acolhimento, escuta ativa e sigilo, com foco no atendimento de qualidade aos meus pacientes. Para isso, estou sempre em busca de atualização nos temas em psicologia.
         </Typography>
       </motion.div>
 
       {/* Botão com animação */}
       <motion.div initial="hidden" animate={controls} variants={buttonAnimation}>
-        <Box sx={{ textAlign: 'center', marginTop: '1.5rem' }}>
+        <Box sx={{ textAlign: 'center', marginTop: '1.5rem', ml: { xs: 0, md: 30 } }}>
           <WhatsAppButton />
         </Box>
       </motion.div>

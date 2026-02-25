@@ -16,12 +16,14 @@ const App: React.FC = () => {
     <>
       {/* Navbar fixa no topo */}
       <NavBar />
+      <WhatsAppFloatButton />
       
       {/* Adiciona um espaço abaixo da barra de navegação para evitar sobreposição */}
       <Toolbar sx={{ minHeight: '50px' }} />
 
       {/* Conteúdo principal responsivo */}
       <Container maxWidth="lg" sx={{ marginTop: '60rem' }}>
+
         <SobreMim />
 
         <Psicoterapia />
@@ -36,9 +38,6 @@ const App: React.FC = () => {
 
         <ContactSection />
       </Container>
-
-      {/* Botão flutuante do WhatsApp */}
-      <WhatsAppFloatButton />
 
       {/* Rodapé fixo */}
       <Footer />
